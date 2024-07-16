@@ -1,4 +1,0 @@
-(sym_lib_table
-  (version 0)
-  (lib (name "Midi Stick-altium-import")(type "KiCad")(uri "${KIPRJMOD}/Midi Stick-altium-import.kicad_sym")(options "")(descr ""))
-)
