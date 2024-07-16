@@ -6,7 +6,7 @@
 	(paper "A4")
 	(title_block
 		(title "Midi Stick")
-		(date "2024-06-20")
+		(date "2024-07-16")
 		(rev "1.3")
 		(company "Sternenlabor e. V.")
 		(comment 1 " André Fiedler <mail@andrefiedler.de>")
@@ -3384,6 +3384,12 @@
 		(uuid "aea61350-edc8-4626-a15b-41b5ee603996")
 	)
 	(junction
+		(at 156.21 135.89)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b7956d60-7ac0-4409-8a1b-ca002ac5750d")
+	)
+	(junction
 		(at 97.79 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3442,6 +3448,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f89fb178-6674-4106-8ae0-24a0c87571f8")
+	)
+	(junction
+		(at 123.19 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f8cad3fe-69be-40f5-af8f-6e05bd8d9311")
 	)
 	(no_connect
 		(at 107.95 127)
@@ -3513,7 +3525,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 81.28) (xy 149.86 81.28)
+			(xy 142.24 81.28) (xy 149.86 81.28)
 		)
 		(stroke
 			(width 0)
@@ -4043,6 +4055,16 @@
 	)
 	(wire
 		(pts
+			(xy 116.84 81.28) (xy 123.19 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c767477-317f-4941-83ff-b223fa89a8a3")
+	)
+	(wire
+		(pts
 			(xy 125.73 113.03) (xy 120.65 113.03)
 		)
 		(stroke
@@ -4313,6 +4335,16 @@
 	)
 	(wire
 		(pts
+			(xy 123.19 93.98) (xy 123.19 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "930e2a9c-12fe-4545-8ea3-b61d1d2f4d8d")
+	)
+	(wire
+		(pts
 			(xy 73.66 158.75) (xy 80.01 158.75)
 		)
 		(stroke
@@ -4343,7 +4375,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 81.28) (xy 123.19 81.28)
+			(xy 129.54 81.28) (xy 123.19 81.28)
 		)
 		(stroke
 			(width 0)
@@ -4360,6 +4392,16 @@
 			(type default)
 		)
 		(uuid "a8b30085-5cc9-42bf-a983-4a1d8973e03c")
+	)
+	(wire
+		(pts
+			(xy 156.21 130.81) (xy 156.21 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8b9187d-4f0d-4b59-86f0-1eaecd000eeb")
 	)
 	(wire
 		(pts
@@ -4653,6 +4695,16 @@
 	)
 	(wire
 		(pts
+			(xy 105.41 81.28) (xy 109.22 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc2497fc-6e14-4dc1-b66c-49dac8b4a687")
+	)
+	(wire
+		(pts
 			(xy 46.99 82.55) (xy 53.34 82.55)
 		)
 		(stroke
@@ -4670,16 +4722,6 @@
 			(type default)
 		)
 		(uuid "de065024-21e7-4118-8a18-659ebc15392e")
-	)
-	(wire
-		(pts
-			(xy 123.19 81.28) (xy 123.19 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "df68039e-7967-401e-83fa-4d2d0af54d6b")
 	)
 	(wire
 		(pts
@@ -4891,6 +4933,17 @@
 			(justify left top)
 		)
 		(uuid "0ab62a91-ef91-4ada-9f4b-bffe3c62ac0d")
+	)
+	(label "VCAP"
+		(at 156.21 130.81 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "27010f88-d829-4d6e-9173-7a55a8d544ba")
 	)
 	(hierarchical_label "D-"
 		(shape bidirectional)
@@ -10610,7 +10663,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "10uF"
+		(property "Value" "10uF / ESR≤3Ω (Tantalum)"
 			(at 158.496 145.796 0)
 			(effects
 				(font
@@ -10619,7 +10672,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 156.21 142.24 0)
 			(effects
 				(font
@@ -15485,7 +15538,7 @@
 	)
 	(symbol
 		(lib_id "Midi Stick-altium-import:root_2_Resistor")
-		(at 138.43 81.28 0)
+		(at 135.89 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15493,7 +15546,7 @@
 		(dnp no)
 		(uuid "84456240-2201-4f34-84e4-8e581b19729b")
 		(property "Reference" "R8"
-			(at 134.366 80.264 0)
+			(at 134.366 76.708 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15502,7 +15555,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 134.366 84.836 0)
+			(at 133.858 79.248 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15511,7 +15564,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 138.43 81.28 0)
+			(at 135.89 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15520,7 +15573,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 138.43 81.28 0)
+			(at 135.89 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15529,7 +15582,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 138.43 81.28 0)
+			(at 135.89 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15538,7 +15591,7 @@
 			)
 		)
 		(property "SUPPLIER 1" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15548,7 +15601,7 @@
 			)
 		)
 		(property "SUPPLIER 2" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15558,7 +15611,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 1" "RHM10DCT-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15568,7 +15621,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 2" "696-1834-1-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15578,7 +15631,7 @@
 			)
 		)
 		(property "SUPPLIER 3" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15588,7 +15641,7 @@
 			)
 		)
 		(property "SUPPLIER 4" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15598,7 +15651,7 @@
 			)
 		)
 		(property "SUPPLIER 5" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15608,7 +15661,7 @@
 			)
 		)
 		(property "SUPPLIER 6" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15618,7 +15671,7 @@
 			)
 		)
 		(property "SUPPLIER 7" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15628,7 +15681,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 3" "RMCF0603JT3K90CT-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15638,7 +15691,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 5" "RHM100DCT-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15648,7 +15701,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 6" "RMCF0603FT54K9CT-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15658,7 +15711,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 7" "RMCF0603FT40K2CT-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15668,7 +15721,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 4" "RHM1.0KDCT-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15678,7 +15731,7 @@
 			)
 		)
 		(property "SUPPLIER 8" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15688,7 +15741,7 @@
 			)
 		)
 		(property "SUPPLIER 9" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15698,7 +15751,7 @@
 			)
 		)
 		(property "SUPPLIER 10" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15708,7 +15761,7 @@
 			)
 		)
 		(property "SUPPLIER 11" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15718,7 +15771,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 10" "311-200JRCT-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15728,7 +15781,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 11" "311-300JRCT-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15738,7 +15791,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 8" "P200LCT-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15748,7 +15801,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 9" "311-1.0KJRCT-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15758,7 +15811,7 @@
 			)
 		)
 		(property "SUPPLIER 12" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15768,7 +15821,7 @@
 			)
 		)
 		(property "SUPPLIER 13" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15778,7 +15831,7 @@
 			)
 		)
 		(property "SUPPLIER 14" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15788,7 +15841,7 @@
 			)
 		)
 		(property "SUPPLIER 15" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15798,7 +15851,7 @@
 			)
 		)
 		(property "SUPPLIER 16" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15808,7 +15861,7 @@
 			)
 		)
 		(property "SUPPLIER 17" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15818,7 +15871,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 12" "YAG3356CT-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15828,7 +15881,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 13" "311-220GRCT-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15838,7 +15891,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 14" "311-220KGRCT-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15848,7 +15901,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 15" "311-1.0KGRCT-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15858,7 +15911,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 16" "311-200KHRCT-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15868,7 +15921,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 17" "A102451-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15878,7 +15931,7 @@
 			)
 		)
 		(property "SUPPLIER 18" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15888,7 +15941,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 18" "311-2.00KHRCT-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15898,7 +15951,7 @@
 			)
 		)
 		(property "SUPPLIER 19" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15908,7 +15961,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 19" "311-10KGRCT-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15918,7 +15971,7 @@
 			)
 		)
 		(property "SUPPLIER 20" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15928,7 +15981,7 @@
 			)
 		)
 		(property "SUPPLIER 21" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15938,7 +15991,7 @@
 			)
 		)
 		(property "SUPPLIER 22" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15948,7 +16001,7 @@
 			)
 		)
 		(property "SUPPLIER 23" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15958,7 +16011,7 @@
 			)
 		)
 		(property "SUPPLIER 24" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15968,7 +16021,7 @@
 			)
 		)
 		(property "SUPPLIER 25" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15978,7 +16031,7 @@
 			)
 		)
 		(property "SUPPLIER 26" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15988,7 +16041,7 @@
 			)
 		)
 		(property "SUPPLIER 27" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15998,7 +16051,7 @@
 			)
 		)
 		(property "SUPPLIER 28" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16008,7 +16061,7 @@
 			)
 		)
 		(property "SUPPLIER 29" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16018,7 +16071,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 29" "311-499KLRCT-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16028,7 +16081,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 28" "311-200KJRCT-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16038,7 +16091,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 26" "YAG3226CT-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16048,7 +16101,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 20" "311-1.00LRCT-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16058,7 +16111,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 25" "311-12KJRCT-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16068,7 +16121,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 24" "311-10.0KLRCT-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16078,7 +16131,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 23" "311-4.7KJRCT-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16088,7 +16141,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 22" "311-2.2KJRCT-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16098,7 +16151,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 21" "311-220JRCT-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16108,7 +16161,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 27" "311-75KJRCT-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16118,7 +16171,7 @@
 			)
 		)
 		(property "SUPPLIER 30" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16128,7 +16181,7 @@
 			)
 		)
 		(property "SUPPLIER 31" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16138,7 +16191,7 @@
 			)
 		)
 		(property "SUPPLIER 32" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16148,7 +16201,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 32" "541-3127-6-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16158,7 +16211,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 31" "696-1677-1-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16168,7 +16221,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 30" "YAG6087CT-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16178,7 +16231,7 @@
 			)
 		)
 		(property "SUPPLIER 33" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16188,7 +16241,7 @@
 			)
 		)
 		(property "SUPPLIER 34" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16198,7 +16251,7 @@
 			)
 		)
 		(property "SUPPLIER 35" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16208,7 +16261,7 @@
 			)
 		)
 		(property "SUPPLIER 36" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16218,7 +16271,7 @@
 			)
 		)
 		(property "SUPPLIER 37" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16228,7 +16281,7 @@
 			)
 		)
 		(property "SUPPLIER 38" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16238,7 +16291,7 @@
 			)
 		)
 		(property "SUPPLIER 39" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16248,7 +16301,7 @@
 			)
 		)
 		(property "SUPPLIER 40" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16258,7 +16311,7 @@
 			)
 		)
 		(property "SUPPLIER 41" "Digi-Key"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16268,7 +16321,7 @@
 			)
 		)
 		(property "SUPPLIER 42" "Arrow"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16278,7 +16331,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 33" "311-47.0HRCT-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16288,7 +16341,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 34" "311-470HRCT-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16298,7 +16351,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 37" "311-5.23KHRCT-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16308,7 +16361,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 36" "311-100KGRCT-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16318,7 +16371,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 35" "311-470KGRCT-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16328,7 +16381,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 38" "311-52.3KHRCT-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16338,7 +16391,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 39" "311-22KGRCT-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16348,7 +16401,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 41" "311-7.15KHRCT-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16358,7 +16411,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 42" "RC0603FR-072K2L"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16368,7 +16421,7 @@
 			)
 		)
 		(property "SUPPLIER PART NUMBER 40" "311-15.8KHRCT-ND"
-			(at 131.572 80.264 0)
+			(at 129.032 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17097,6 +17150,515 @@
 		)
 	)
 	(symbol
+		(lib_id "Midi Stick-altium-import:root_1_Cap")
+		(at 113.03 81.28 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "96476078-7694-4c20-9b86-a2b1a08e1c87")
+		(property "Reference" "C13"
+			(at 115.062 74.676 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "100nF"
+			(at 116.078 76.962 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 113.03 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 113.03 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 1" "Digi-Key"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 2" "Digi-Key"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 3" "Digi-Key"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 1" "1276-2044-1-ND"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 2" "1276-1018-1-ND"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 3" "1276-1182-1-ND"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 4" "Digi-Key"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 5" "Digi-Key"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 6" "Digi-Key"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 7" "Digi-Key"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 8" "Digi-Key"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 9" "Digi-Key"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 4" "1276-1009-1-ND"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 5" "1276-1098-1-ND"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 6" "1276-1119-1-ND"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 7" "490-12737-1-ND"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 9" "587-1249-1-ND"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 8" "1276-1183-1-ND"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 10" "Digi-Key"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 11" "Digi-Key"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 12" "Digi-Key"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 13" "Digi-Key"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 10" "1276-CL10B104KB8NNNLCT-ND"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 11" "399-1085-1-ND"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 13" "587-2985-1-ND"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 12" "1276-1021-1-ND"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 14" "Digi-Key"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 15" "Digi-Key"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 16" "Digi-Key"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 17" "Digi-Key"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 18" "Digi-Key"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 19" "Digi-Key"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 14" "490-14603-1-ND"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 15" "311-3700-1-ND"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 16" "311-1042-1-ND"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 17" "311-1415-1-ND"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 19" "587-4321-1-ND"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 18" "1276-1907-1-ND"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 20" "Digi-Key"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 21" "Digi-Key"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 22" "Digi-Key"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 20" "1276-6767-1-ND"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 21" "1276-7060-1-ND"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 22" "311-1084-1-ND"
+			(at 108.712 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b236ad33-6509-48fa-9874-ff4ef99316c9")
+		)
+		(pin "2"
+			(uuid "b59c2b2d-3f34-4355-ac2e-87c9e7e07638")
+		)
+		(instances
+			(project "Midi Stick"
+				(path "/f1175471-8919-4b46-a357-a17bb7e75f77"
+					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Midi Stick-altium-import:root_0_dual TVS Diode")
 		(at 49.53 132.08 0)
 		(unit 1)
@@ -17183,6 +17745,915 @@
 			(project "Midi Stick"
 				(path "/f1175471-8919-4b46-a357-a17bb7e75f77"
 					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Midi Stick-altium-import:root_1_Resistor")
+		(at 123.19 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9e391eea-2bf3-409a-8cdd-93f5ff9c7ccc")
+		(property "Reference" "R10"
+			(at 125.222 87.122 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "1k"
+			(at 125.984 89.408 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 123.19 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 123.19 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 123.19 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 1" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 2" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 1" "RHM10DCT-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 2" "696-1834-1-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 3" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 4" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 5" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 6" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 7" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 3" "RMCF0603JT3K90CT-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 5" "RHM100DCT-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 6" "RMCF0603FT54K9CT-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 7" "RMCF0603FT40K2CT-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 4" "RHM1.0KDCT-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 8" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 9" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 10" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 11" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 10" "311-200JRCT-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 11" "311-300JRCT-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 8" "P200LCT-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 9" "311-1.0KJRCT-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 12" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 13" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 14" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 15" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 16" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 17" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 12" "YAG3356CT-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 13" "311-220GRCT-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 14" "311-220KGRCT-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 15" "311-1.0KGRCT-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 16" "311-200KHRCT-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 17" "A102451-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 18" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 18" "311-2.00KHRCT-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 19" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 19" "311-10KGRCT-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 20" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 21" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 22" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 23" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 24" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 25" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 26" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 27" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 28" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 29" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 29" "311-499KLRCT-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 28" "311-200KJRCT-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 26" "YAG3226CT-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 20" "311-1.00LRCT-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 25" "311-12KJRCT-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 24" "311-10.0KLRCT-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 23" "311-4.7KJRCT-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 22" "311-2.2KJRCT-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 21" "311-220JRCT-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 27" "311-75KJRCT-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 30" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 31" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 32" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 32" "541-3127-6-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 31" "696-1677-1-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 30" "YAG6087CT-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 33" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 34" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 35" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 36" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 37" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 38" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 39" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 40" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 41" "Digi-Key"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER 42" "Arrow"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 33" "311-47.0HRCT-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 34" "311-470HRCT-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 37" "311-5.23KHRCT-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 36" "311-100KGRCT-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 35" "311-470KGRCT-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 38" "311-52.3KHRCT-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 39" "311-22KGRCT-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 41" "311-7.15KHRCT-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 42" "RC0603FR-072K2L"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SUPPLIER PART NUMBER 40" "311-15.8KHRCT-ND"
+			(at 122.174 80.772 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "124345c0-d6ab-4a55-9932-8c1d52b8058e")
+		)
+		(pin "2"
+			(uuid "d2915e26-82e2-41f6-82dd-3960013e0354")
+		)
+		(instances
+			(project "Midi Stick"
+				(path "/f1175471-8919-4b46-a357-a17bb7e75f77"
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -21999,6 +23470,71 @@
 			(project "Midi Stick"
 				(path "/f1175471-8919-4b46-a357-a17bb7e75f77"
 					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Midi Stick-altium-import:GND_POWER_GROUND")
+		(at 105.41 81.28 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f05e917a-3c79-416a-a868-d774782c4a93")
+		(property "Reference" "#PWR025"
+			(at 105.41 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 97.282 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 105.41 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105.41 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 105.41 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin ""
+			(uuid "ce8ede6b-2a38-451d-95e1-201fff711394")
+		)
+		(instances
+			(project "Midi Stick"
+				(path "/f1175471-8919-4b46-a357-a17bb7e75f77"
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
