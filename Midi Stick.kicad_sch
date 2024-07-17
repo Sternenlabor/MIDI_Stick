@@ -4934,6 +4934,27 @@
 		)
 		(uuid "0ab62a91-ef91-4ada-9f4b-bffe3c62ac0d")
 	)
+	(text_box "C11:\n\n	Aluminum or electrolytic capacitors \n	should not be used. \n\n	ESR ≤ 3Ω \n\n	from -4°C to 12°C @ SYSCLK \n	frequency (i.e., MIPS)."
+		(exclude_from_sim no)
+		(at 187.96 143.51 0)
+		(size 43.18 21.59)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 150 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "1e0ecf91-156a-46d0-bd50-d9e0edb90584")
+	)
 	(label "VCAP"
 		(at 156.21 130.81 0)
 		(fields_autoplaced yes)
