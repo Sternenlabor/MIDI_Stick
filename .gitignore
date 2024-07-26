@@ -1,2 +1,6 @@
 
 *.Zip
+
+.DS_Store
+
+Midi Stick-backups/
