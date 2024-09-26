@@ -7,4 +7,5 @@
   (lib (name "AMS1117-3.3")(type "KiCad")(uri "${KIPRJMOD}/parts/AMS1117-3.3.kicad_sym")(options "")(descr ""))
   (lib (name "ECS-3225MV-250-CN-TR")(type "KiCad")(uri "${KIPRJMOD}/parts/ECS-3225MV-250-CN-TR.kicad_sym")(options "")(descr ""))
   (lib (name "CRYSTAL-SMD_4P-L3.2-W2.5-BL-1")(type "KiCad")(uri "${KIPRJMOD}/parts/CRYSTAL-SMD_4P-L3.2-W2.5-BL-1.kicad_sym")(options "")(descr ""))
+  (lib (name "MCU_RaspberryPi_RP2350")(type "KiCad")(uri "${KIPRJMOD}/parts/MCU_RaspberryPi_RP2350.kicad_sym")(options "")(descr ""))
 )
