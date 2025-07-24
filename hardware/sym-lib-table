@@ -1,6 +1,5 @@
 (sym_lib_table
   (version 7)
-  (lib (name "Midi Stick-altium-import")(type "KiCad")(uri "${KIPRJMOD}/Midi Stick-altium-import.kicad_sym")(options "")(descr ""))
   (lib (name "PESD5V0U2BT_215")(type "KiCad")(uri "${KIPRJMOD}/parts/PESD5V0U2BT_215.kicad_sym")(options "")(descr ""))
   (lib (name "HFBR-x41xZ")(type "KiCad")(uri "${KIPRJMOD}/parts/HFBR-x41xZ.kicad_sym")(options "")(descr ""))
   (lib (name "PIC32MX270F256B-I-SS")(type "KiCad")(uri "${KIPRJMOD}/parts/PIC32MX270F256B-I-SS.kicad_sym")(options "")(descr ""))
